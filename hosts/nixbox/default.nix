@@ -10,7 +10,7 @@
     ];
 
   # Kernel
-  boot.kernelPackages = pkgs.linuxPackages_6_0;
+  boot.kernelPackages = pkgs.linuxKernel.packages.linux_xanmod_stable;
 
   # Use the GRUB 2 EFI boot loader.
   boot.loader.systemd-boot = {
